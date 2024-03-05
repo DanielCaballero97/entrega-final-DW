@@ -2,6 +2,13 @@
 
 @media (min-width: 768px){
 
+  //index
+  .grid{
+    grid-template-rows: 550px 200px 1fr;
+  }
+
+
+
     //ayuda
         .dropdown-hidden-menu  ,.hidden-nav-link ,.actividades-hidden-menu{
           display: none;
@@ -21,6 +28,12 @@
   /* arriba de 1280*/
 
   @media (min-width: 1280px){
+
+      //index
+  .grid{
+    grid-template-rows: 650px 250px 1fr;
+  }
+
 
   }
 

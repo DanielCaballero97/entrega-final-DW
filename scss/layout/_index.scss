@@ -37,17 +37,15 @@
   padding-right: 7%;
 
   &-resaltado{
+    @include flex(column, center, center, 0px);
     color:rgb(82, 82, 82);
     margin-left: 25px;
     transition: 2s;
-    padding-top: 30px;  
-   
-    &:hover{
-    background: rgb(255,113,206);
-    background: linear-gradient(0deg, rgba(255,113,206,1) 0%, rgba(185,103,255,1) 26%);
-    color: transparent;
-    background-clip: text;
-    }
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(0deg,$color5 , $color1);
+    border-radius: 10px;
+  
   }
 
   &-grid{
@@ -101,6 +99,7 @@
 .paquetes{
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 20px;
 
   &-cards{
     &-card{
@@ -119,8 +118,6 @@
     }
   }
 }
-
-
 
 
  .arma-paquete{
@@ -150,20 +147,6 @@
  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  /*logos de empresas asociadas , como no hay, pongo imagen de "no hay imagen" :P */
  .empre-aso{
   width: 100%;
@@ -181,6 +164,7 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    gap: 15px;
 
     & img{
       width: 50%;
@@ -216,7 +200,7 @@
 
  .grid{
    display: grid;
-   grid-template-rows: 500px 150px 1fr;
+   grid-template-rows: 600px 150px 1fr;
    grid-template-areas: 
    "a1"
    "a4"
