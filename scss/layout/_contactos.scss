@@ -1,0 +1,21 @@
+
+
+
+  .contacto{
+    & h1 ,& h2{
+      @include flex(column,center,center,0);
+      background: $color3;
+      opacity: 80%;
+      border-radius: 10px;
+    }
+
+    &-layout{
+      font-size: 20px;
+      border-radius: 10px;
+    }
+  }
+
+  .form-control , .form-select{
+    border-radius: 10px;
+    border-color: black;
+  }

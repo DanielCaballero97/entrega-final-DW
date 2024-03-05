@@ -1,0 +1,23 @@
+
+/* base primero*/
+@import "base/vars"; /* siempre primero el vars */
+@import "base/reset";
+@import "base/utilities";
+/* components despues*/
+@import "components/navbar";
+@import "components/footer";
+/*layout al final*/
+@import "layout/index";
+@import "layout/contactos";
+@import "layout/ayuda";
+@import "layout/ayuda-respuesta";
+@import "layout/nosotros";
+@import "layout/paso4.scss";
+@import "layout/paso3.scss";
+@import "layout/paso2.scss";
+@import "layout/paso1.scss";
+@import "layout/paso5.scss";
+@import "layout/mediaqueris";
+
+
+

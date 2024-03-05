@@ -1,0 +1,209 @@
+/*arriba de 768 px*/
+
+@media (min-width: 768px){
+
+    //ayuda
+        .dropdown-hidden-menu  ,.hidden-nav-link ,.actividades-hidden-menu{
+          display: none;
+        }
+
+        //actividades
+
+        .header-actividades{
+
+          &-card{
+              height: 400px;
+          }
+        }
+  }
+
+
+  /* arriba de 1280*/
+
+  @media (min-width: 1280px){
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*entre 576px y 768px*/
+  @media(min-width: 576px) and (max-width: 768px){
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* abajo de 768*/
+  @media (max-width: 768px) {
+    
+
+    //index
+
+    .grid{
+      grid-template-rows: 400px 150px 1fr;
+    }
+
+    .tendencia-grid{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6 , 300px);
+      grid-template-areas: 
+      "c1"
+      "c2"
+      "c3"
+      "c4"
+      "c5"
+      "c6";
+    }
+
+    //ayuda
+    .col-4{
+      width: 50%;
+    }
+
+    .box-palabras-clave , .second-navbar-index{
+      display: none;
+    }
+    .ayuda-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr ;
+      grid-template-areas:
+      "d2"
+      "d3" ;}
+
+      //ayuda-respuesta
+
+      .ayuda-respuesta-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr ;
+        grid-template-areas:
+        "e2"
+        "e4"
+        "e3" ;}
+
+
+      //nosotros
+
+      .presentacion-nosotros p{
+        font-size: 30px;
+      }
+
+      .nosotros{
+        flex-direction: column;
+      }
+
+
+    //footer
+    .footer-col p{
+      font-size: 5px;
+    }
+
+      //navbar
+    .nav-link{
+      color: rgb(54, 54, 54);
+    }
+
+    //paso3
+
+    .actividades-dispoonibles-card-div{
+      height: auto;
+    }
+
+    .section-actividades-clave-card-body-form-check{
+      margin: 10px;
+    }
+
+    .actividades-hidden-menu-row-group ul{
+      background:linear-gradient(315deg ,$color5 ,$color2);
+
+    }
+
+    .actividades-grid{
+      grid-template-columns: repeat(2 , 1fr);
+      grid-template-rows: repeat(3 , 1fr) ;
+      grid-template-areas: 
+      "f2 f2"
+      "f2 f2"
+      "f2 f2";
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* abajo de 576 px*/
+ @media (max-width: 576px) {
+    
+    //index
+    
+      .grid{
+        grid-template-rows: 300px 150px 1fr;
+      }
+
+      .tendencia-grid{
+      grid-template-rows: repeat(6 , 200px);}
+
+
+
+      .paquetes-grid{
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows:(3, 1fr);
+        grid-template-areas: 
+        "b1 b2"
+        "b3 b4"
+        "b5 b6";  
+      }
+
+      .paquetes{
+        padding-left: 3%;
+        padding-right: 3%;
+      }
+      
+      .empre-aso-img{
+        height: auto;
+      }
+
+
+    //ayuda
+    .col-4{
+      width: 100%;
+    }
+
+
+    //paso1
+    .lugares-section{
+      flex-direction: column;
+
+      &-card{
+        width: 100%;
+      }
+    }
+  }

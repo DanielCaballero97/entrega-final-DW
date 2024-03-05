@@ -1,0 +1,248 @@
+
+
+
+//header del index, lo pongo aca ya que solo aparece en el index
+
+
+.index-article-start{
+  @include flex(row, center, center, 10px);
+  
+  
+  &-content{
+    @include flex(column, center, center, 10px);
+    background: rgb(185, 103, 255);
+    background: linear-gradient(0deg, rgb(185 103 255 / 85%) 0%, rgb(1 205 254 / 84%) 100%);
+    width: 60%;
+    height: 30%;
+    border-radius: 10px;
+    position: absolute;
+    color: white;
+
+    & h3{
+      padding-left: 8px;
+      @include flex(column, center, center, 10px);
+
+    }
+  }
+
+  &-carousel{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.tendencia{
+  padding-left: 7%;
+  padding-right: 7%;
+
+  &-resaltado{
+    color:rgb(82, 82, 82);
+    margin-left: 25px;
+    transition: 2s;
+    padding-top: 30px;  
+   
+    &:hover{
+    background: rgb(255,113,206);
+    background: linear-gradient(0deg, rgba(255,113,206,1) 0%, rgba(185,103,255,1) 26%);
+    color: transparent;
+    background-clip: text;
+    }
+  }
+
+  &-grid{
+  
+    &-card{
+      text-decoration: none;
+      --bs-card-border-color:none;
+      background:linear-gradient(125deg ,$color1 ,$color2);
+      background-position:50% 50% ; 
+      background-repeat: no-repeat;
+      background-size: 0% 100%; 
+      transition: background-size 0.5s;
+      &:hover{
+          background-size: 100% 100%;
+      }
+  
+      &-img{
+        width: 100%;
+        height: 100%;
+      }
+  
+      &-overlay{
+      @include flex(column-reverse,flex-start,flex-end,0);
+      --bs-card-title-spacer-y:0;
+      
+  
+        & h3{
+        align-items: flex-end;
+        padding: 3px;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.615);
+        margin: 3px;
+
+        }
+  
+        & p{
+        margin-bottom: 0;
+        background-color: rgba(128, 128, 128, 0.612);
+        border-radius: 10px;
+        padding: 3px;
+        margin: 3px;
+
+
+        }
+      }
+    }
+  }
+  
+}
+
+.paquetes{
+  padding-left: 10%;
+  padding-right: 10%;
+
+  &-cards{
+    &-card{
+      padding: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      &:hover{
+        transform: scale(1.01);
+      }
+      &-body{
+        @include flex(column-reverse,flex-start,flex-start,0);
+        --bs-card-title-spacer-y:0;
+        & p{
+          margin-bottom: 0;}
+      }
+    }
+  }
+}
+
+
+
+
+ .arma-paquete{
+  @include flex(column, center, center, 0px);
+  width: 100%;
+  height: 200px;
+  
+  
+  &-box{
+    @include flex(column, center, center, 10px);
+    padding: 4%;
+    background: linear-gradient(0deg,$color5 , $color1);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(143, 143, 143);
+    & h2{
+      color: white;
+    }
+
+    & a{
+      text-decoration: none;
+      font-size: 25px;
+    }
+  }
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*logos de empresas asociadas , como no hay, pongo imagen de "no hay imagen" :P */
+ .empre-aso{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-img{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    & img{
+      width: 50%;
+      height: 50%;
+  
+    }
+  }
+}
+
+   /*grid index*/
+ .a1{grid-area: a1;}
+ .a2{grid-area: a2;}
+ .a3{grid-area: a3;}
+ .a4{grid-area: a4;}
+ .a5{grid-area: a5;}
+
+ /*grid en index lugar donde te gustaria viajar*/
+ .b1{grid-area: b1;}
+ .b2{grid-area: b2;}
+ .b3{grid-area: b3;}
+ .b4{grid-area: b4;}
+ .b5{grid-area: b5;}
+ .b6{grid-area: b6;}
+
+ /* grid en index lugares en tendencia */
+ .c1{grid-area: c1;} 
+ .c2{grid-area: c2;} 
+ .c3{grid-area: c3;} 
+ .c4{grid-area: c4;} 
+ .c5{grid-area: c5;} 
+ .c6{grid-area: c6;}
+
+
+ .grid{
+   display: grid;
+   grid-template-rows: 500px 150px 1fr;
+   grid-template-areas: 
+   "a1"
+   "a4"
+   "a2"
+   "a3";
+ }
+
+ .paquetes-grid{
+   padding: 25px;
+   gap: 10px;
+   display: grid;
+   grid-template-columns: repeat(3 , 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-areas: 
+   "b1 b2 b3"
+   "b4 b5 b6";  
+ }
+
+ .tendencia-grid{
+   padding: 40px;
+   display: grid;
+   grid-template-columns: repeat(2 , 1fr);
+   grid-template-rows: repeat(3 , 400px);
+   grid-template-areas: 
+   "c1 c2"
+   "c3 c4"
+   "c5 c6";
+ }
+
